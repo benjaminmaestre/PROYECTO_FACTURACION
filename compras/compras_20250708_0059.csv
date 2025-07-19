@@ -1,0 +1,11 @@
+id_transaccion,fecha_emision,nombre,correo,telefono,direccion,ciudad,cantidad,monto,pago,estado_pago,ip,timestamp,observaciones
+779934,2025-07-08,John Velásquez Fernández,josearrieta@example.org,57 607 917 88 34,Carrera 48T # 30-1,Pereira,4,45376,fraccionado,exitoso,178.241.185.154,2025-07-08 00:59:44,Cliente nuevo
+911927,2025-07-08,Carolina Espinosa,santiago71@example.com,+57 315 516 45 96,Avenida calle 109 # 94-79 Este,Cartagena,8,195336,fraccionado,exitoso,137.160.45.59,2025-07-08 00:59:44,
+260286,2025-07-08,Paola Myriam Molina Agudelo,correo_invalido@@,325 387 18 58,Avenida calle 106 # 35-3 Este,Pereira,2,47760,completo,exitoso,111.228.13.152,2025-07-08 00:59:44,
+590667,2025-07-08,Marisol Eugenia Flórez,tamayodaniela@example.net,01 8006 990 716,Cr. 9ª # 41-9 Este,Bucaramanga,1,20594,completo,fallido,191.97.107.116,2025-07-08 00:59:44,Promoción aplicada
+204848,2025-07-08,Yasmín Sánchez,luzmendoza@example.net,316 799 21 82,Cr. 8L Bis N # 51-9 Sur,Manizales,5,56015,fraccionado,fallido,22.77.216.110,2025-07-08 00:59:44,Cliente frecuente
+402789,2025-07-08,Adolfo Rosero Delgado,lromero@example.org,6099391645,Carrera 143 # 58-4 Este,Medellín,3,49032,completo,fallido,117.87.186.189,2025-07-08 00:59:44,Cliente frecuente
+599573,2025-07-08,Luis Eduardo Jaramillo Vargas,correo_invalido@@,573045319338,Calle 104A # 57-8,Barranquilla,5,189655,fraccionado,fallido,87.23.79.231,2025-07-08 00:59:44,Cliente nuevo
+122792,2025-07-08,Javier Tomás Rosero,qherrera@example.net,018002395990,Cr. 7ª # 35-51 Sur,Cartagena,5,186490,completo,fallido,43.78.149.5,2025-07-08 00:59:44,Cliente nuevo
+516365,2025-07-08,María Ruiz,leidy20@example.org,307 641 48 47,Avenida carrera 86 # 71F-89 Sur,Manizales,10,167680,completo,fallido,177.112.32.240,2025-07-08 00:59:44,Cliente nuevo
+401094,2025-07-08,Juan José Torres Mosquera,ramoscarmen@example.org,3071776073,Av. Carolina Morales Osorio # 49-17 Este,Manizales,7,163023,completo,fallido,39.44.35.199,2025-07-08 00:59:44,

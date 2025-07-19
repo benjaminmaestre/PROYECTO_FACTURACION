@@ -1,0 +1,11 @@
+id_transaccion;fecha_emision;nombre;correo;telefono;direccion;ciudad;cantidad;monto;pago;estado_pago;ip;timestamp;observaciones
+315547;2025-07-08;Julián Jaime Quintero Hernández;cgonzales@example.org;+57 309 420 21 48;Calle 2V # 37-3 Este;Manizales;2;99756;completo;fallido;5.70.166.145;2025-07-08 01:40:06;
+232462;2025-07-08;Diana Vanessa Ibarra;andresforero@example.net;3165775605;Av. Cecilia González Lara # 9-1;Cali;7;158998;fraccionado;exitoso;121.235.80.180;2025-07-08 01:40:06;Promoción aplicada
+508686;2025-07-08;Milena Leidy Moreno Luna;perezangela@example.com;+576049749905;Avenida Málaga # 15R-56 Este;Bucaramanga;9;99810;fraccionado;exitoso;10.137.110.136;2025-07-08 01:40:06;Cliente nuevo
+528430;2025-07-08;Jesús William Betancur Angulo;andresalzate@example.net;(+57)6019747294;Cr. 11 # 15K-85;Manizales;7;138215;fraccionado;exitoso;92.241.33.221;2025-07-08 01:40:06;
+721825;2025-07-08;Roberto Contreras Ortiz;emilio99@example.net;+57 322 294 30 95;Carrera 83 # 80-27 Sur;Cali;10;270450;fraccionado;fallido;207.208.188.188;2025-07-08 01:40:06;Cliente nuevo
+685937;2025-07-08;Pablo Rodríguez;sanchezstiven@example.net;607 624 00 84;Cr. 136I # 6-40 Este;Barranquilla;1;45019;completo;fallido;38.215.73.178;2025-07-08 01:40:06;Cliente frecuente
+731622;2025-07-08;Lida Rosa Morales Sánchez;elizabeth01@example.com;57 317 733 17 37;Cl. 33K Bis # 71-82 Este;Medellín;9;329346;fraccionado;fallido;2.157.237.196;2025-07-08 01:40:06;
+308867;2025-07-08;Fernando Hernán Delgado;nancypinzon@example.org;(+57) 322 360 45 50;Calle 2W # 4-98;Barranquilla;9;319131;fraccionado;exitoso;200.138.141.41;2025-07-08 01:40:06;
+212143;2025-07-08;Elkin Antonio Rodríguez Bautista;ncifuentes@example.com;573270992252;Cl. 1B # 4-12;Cali;2;22688;completo;exitoso;165.215.0.182;2025-07-08 01:40:06;Cliente frecuente
+811771;2025-07-08;Cecilia Morales Bernal;ferney24@example.com;573071280371;Transversal 16J # 79-93 Este;Medellín;2;38872;completo;exitoso;184.37.249.207;2025-07-08 01:40:06;Cliente nuevo

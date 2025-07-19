@@ -1,0 +1,11 @@
+id_transaccion;fecha_emision;nombre;correo;telefono;direccion;ciudad;cantidad;monto;pago;estado_pago;ip;timestamp;observaciones
+743974;2025-07-08;Gerardo Nelson Pacheco;mendezheidy@example.org;+57 326 607 87 18;Avenida carrera 4ª # 68T-7 Este;Manizales;10;240100;completo;exitoso;210.182.133.223;2025-07-08 01:34:40;Cliente nuevo
+170542;2025-07-08;Gustavo Francisco Galindo;gonzalojimenez@example.org;573083507499;Av. carrera 3ª # 5-9;Cartagena;9;376713;completo;exitoso;84.82.3.172;2025-07-08 01:34:40;Cliente nuevo
+147645;2025-07-08;Jorge Jairo Calderón Muñoz;bhoyos@example.net;(+57) 313 831 15 43;Cl. 74 # 92-85;Barranquilla;7;344421;completo;exitoso;80.231.247.96;2025-07-08 01:34:40;Cliente frecuente
+765897;2025-07-08;Daniel Gabriel Zapata Quintero;carlosrubio@example.net;57 310 961 02 14;Cr. 8S # 53-9 Sur;Medellín;5;229795;completo;fallido;148.174.249.15;2025-07-08 01:34:40;
+494956;2025-07-08;Emerson Ortiz Oviedo;nellymedina@example.com;6027725971;Av. Sucre # 7-22 Este;Pereira;7;301980;completo;exitoso;23.213.207.13;2025-07-08 01:34:40;
+697867;2025-07-08;Dary Caro;rodriguezjorge@example.org;573220882142;Calle 3ª # 1-9 Este;Barranquilla;9;177687;completo;fallido;207.191.246.171;2025-07-08 01:34:40;Promoción aplicada
+870686;2025-07-08;Oliva Leidy Osorio;orozcoalejandro@example.org;+573269910262;Tr. 5N # 23-50 Sur;Manizales;4;46564;completo;fallido;194.82.28.208;2025-07-08 01:34:40;Cliente frecuente
+809822;2025-07-08;Elizabeth Natalia Solano Valderrama;cblanco@example.com;(+57)6042341364;Diagonal 2ª # 7-90;Bucaramanga;4;115108;fraccionado;fallido;62.189.138.63;2025-07-08 01:34:40;Cliente frecuente
+555878;2025-07-08;Lorena Molina Salazar;marcela61@example.com;+57 609 778 89 72;Cr. 8J # 7L-31 Sur;Cartagena;9;355212;completo;fallido;99.141.78.44;2025-07-08 01:34:40;Cliente frecuente
+553837;2025-07-08;Alexis Juan Caicedo;ruben43@example.org;(+57)3217171479;Carrera 80R # 84-4 Sur;Bucaramanga;5;121710;fraccionado;exitoso;17.16.34.140;2025-07-08 01:34:40;Promoción aplicada

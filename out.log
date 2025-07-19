@@ -1,0 +1,49 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(facturas/factura_779934.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo))
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty)
+(C:\Users\benja\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def)
+No file factura_779934.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+! You can't use `macro parameter character #' in restricted horizontal mode.
+l.26 Dirección & Carrera 48T #
+                                30-1 \\
+? l.33 \begin{longtable}{l
+                        l}
+? l.34 Cantidad comprada & 4 \\
+                             
+? l.37 Estad
+          o del pago & exitoso \\
+? l.37 Estado del pago & exitoso
+                               \\
+? l.42 \section*{Detalles T
+                         écnicos}
+? l.44 IP de compra & 178.241.185.154 \\
+                                      
+? l.45 Fecha y hor
+                a & 2025-07-08 00:59:44 \\
+? l.50 \section
+             *{Observaciones}
+? l.53 \vspace{0.5cm}
+                   
+? 
+! Emergency stop.
+l.53 
+     
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on C:\Users\benja\OneDrive\Documents\proyecto_facturacion\fa
+cturas\factura_779934.log.

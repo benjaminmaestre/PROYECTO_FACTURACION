@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{longtable}
+
+\begin{document}
+
+\begin{center}
+    \Huge Mercado IRSI \\
+    \Large Factura Electrónica
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent \textbf{Factura Número:} {id_transaccion} \\
+\textbf{Fecha de Emisión:} {fecha_emision}
+
+\vspace{0.5cm}
+
+\section*{Información del Cliente}
+\begin{longtable}{ll}
+Nombre completo & {nombre} \\
+Correo electrónico & {correo} \\
+Teléfono & {telefono} \\
+Dirección & {direccion} \\
+Ciudad & {ciudad} \\
+\end{longtable}
+
+\vspace{0.5cm}
+
+\section*{Detalles de la Compra}
+\begin{longtable}{ll}
+Cantidad comprada & {cantidad} \\
+Monto total & \$ {monto} \\
+Tipo de pago & {pago} \\
+Estado del pago & {estado_pago} \\
+\end{longtable}
+
+\vspace{0.5cm}
+
+\section*{Detalles Técnicos}
+\begin{longtable}{ll}
+IP de compra & {ip} \\
+Fecha y hora & {timestamp} \\
+\end{longtable}
+
+\vspace{0.5cm}
+
+\section*{Observaciones}
+{observaciones}
+
+\vspace{0.5cm}
+
+\begin{center}
+    Gracias por su compra. \\
+    Mercado IRSI - www.mercadoirsi.com
+\end{center}
+
+\end{document}

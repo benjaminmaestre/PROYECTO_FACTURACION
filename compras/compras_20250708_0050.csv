@@ -1,0 +1,11 @@
+id_transaccion,fecha_emision,nombre,correo,telefono,direccion,ciudad,cantidad,monto,pago,estado_pago,ip,timestamp,observaciones
+427409,2025-07-08,Jorge Alberto González,vosorio@example.org,303 433 89 34,Tr. 49 # 86-1 Sur,Bucaramanga,9,147654,fraccionado,exitoso,153.251.164.251,2025-07-08 00:50:03,Promoción aplicada
+543674,2025-07-08,Alberto Márquez Erazo,herreraandres@example.org,57 326 584 01 82,Avenida Rivera # 2-3 Sur,Medellín,8,210712,fraccionado,exitoso,175.222.118.231,2025-07-08 00:50:03,Promoción aplicada
+209604,2025-07-08,José Gregorio Quintero,cecilia82@example.net,6085028228,Av. calle 4ª # 9-70,Bucaramanga,1,23024,fraccionado,fallido,177.44.15.153,2025-07-08 00:50:03,Promoción aplicada
+345536,2025-07-08,Isabel Claudia Delgado,josegomez@example.org,+573235851079,Carrera 3ª # 8-8 Este,Barranquilla,2,27402,fraccionado,exitoso,101.126.225.150,2025-07-08 00:50:03,Cliente frecuente
+265749,2025-07-08,Daniela María Pérez Ortiz,lorena70@example.com,9523356,Avenida calle 9ª # 3-8,Manizales,10,423210,fraccionado,exitoso,36.44.202.185,2025-07-08 00:50:03,Cliente nuevo
+235734,2025-07-08,Mary Rodríguez,vhernandez@example.com,(+57) 323 743 02 74,Cr. 48 # 9V-31,Bucaramanga,2,95636,fraccionado,fallido,191.122.79.80,2025-07-08 00:50:03,Cliente frecuente
+661615,2025-07-08,Jorge Navarro,veronicacorrea@example.com,018005387845,Dg. 6ª # 92E-6,Bogotá,7,202706,fraccionado,fallido,102.11.105.71,2025-07-08 00:50:03,Cliente nuevo
+342664,2025-07-08,Myriam Rincón,esperanza42@example.net,3812441,Cr. 6J # 34-53 Sur,Pereira,7,93891,fraccionado,fallido,122.180.7.213,2025-07-08 00:50:03,
+158365,2025-07-08,Jennifer García Díaz,jaimechaparro@example.com,57 317 522 90 48,Cr. 144O # 7-3,Bogotá,1,45996,completo,exitoso,101.236.81.56,2025-07-08 00:50:03,
+558265,2025-07-08,Jair Sánchez,carlos04@example.com,+573177994158,Avenida González # 93-32 Este,Cali,9,326322,completo,fallido,90.33.19.108,2025-07-08 00:50:03,Cliente frecuente

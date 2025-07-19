@@ -1,0 +1,11 @@
+id_transaccion,fecha_emision,nombre,correo,telefono,direccion,ciudad,cantidad,monto,pago,estado_pago,ip,timestamp,observaciones
+234956,2025-07-07,Shirley Ewing,mollyhernandez@example.com,(684)800-0076,04971 Omar Row Suite 155,South Shelley,10,96120,fraccionado,exitoso,63.112.48.43,2025-07-07 23:13:41,
+739228,2025-07-07,Erika Scott,laura33@example.net,+1-209-572-1103,1028 Peter Locks,Gloverstad,2,15770,fraccionado,exitoso,32.170.160.43,2025-07-07 23:13:41,
+897684,2025-07-07,Michelle Jimenez,robertobaker@example.org,001-584-335-1081x07946,05940 Beard Street Suite 410,Roberttown,6,25536,fraccionado,exitoso,182.137.157.218,2025-07-07 23:13:41,Cliente nuevo
+394367,2025-07-07,Jeffrey Walker,annareed@example.net,001-933-795-8581,585 Sherri Views,West Kevinton,10,53010,fraccionado,fallido,67.241.33.85,2025-07-07 23:13:41,
+654382,2025-07-07,Raymond Gardner,yoderkimberly@example.com,(499)427-1045x9490,6457 Stephen Tunnel Apt. 406,South Tylerport,6,18174,completo,exitoso,203.194.130.149,2025-07-07 23:13:41,Cliente nuevo
+802572,2025-07-07,Nicole Ward,kim50@example.com,(478)462-6568,140 Nelson Cliffs Suite 381,Karenburgh,5,12915,fraccionado,exitoso,119.16.40.82,2025-07-07 23:13:41,Promoción aplicada
+111012,2025-07-07,Stefanie Kelley,lucasamanda@example.net,(919)286-0271x70071,632 James Crossroad,New Eric,5,22515,fraccionado,exitoso,147.51.159.78,2025-07-07 23:13:41,Cliente nuevo
+766355,2025-07-07,Jennifer Foster,louis63@example.com,+1-876-585-9097x083,30344 Thomas Lane Suite 835,Juanchester,8,62664,fraccionado,fallido,188.251.117.130,2025-07-07 23:13:41,Promoción aplicada
+383533,2025-07-07,David Serrano,michaelcollins@example.com,634.965.5951,02190 Dustin Manors Apt. 471,Lake Russellside,3,24408,completo,exitoso,215.183.24.207,2025-07-07 23:13:41,Promoción aplicada
+750584,2025-07-07,Jennifer Clark,browncharles@example.net,001-256-752-2397,83943 Moore Gardens,Wandaberg,2,19406,fraccionado,exitoso,31.73.200.76,2025-07-07 23:13:41,Cliente nuevo
