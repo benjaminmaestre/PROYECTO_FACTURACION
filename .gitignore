@@ -7,36 +7,35 @@ usuarios_errores.log
 log_diario.log
 log_envios.csv
 
-# Archivos temporales de LaTeX
+# Archivos temporales de LaTeX (archivos de soporte generados)
 *.aux
-*.log
 *.synctex.gz
 *.fdb_latexmk
 *.fls
 *.out
 *.toc
 
-# Archivos de compilación
+# Archivos de compilación específicos
 compile_*.log
 
-# Archivos generados (PDFs pueden incluirse opcionalmente)
-# facturas/*.pdf
+# Archivos generados (PDFs y TeX dentro de la carpeta 'facturas')
+facturas/
 
 # Archivos de compras con datos sensibles
 compras/*.csv
 compras/*.log
 
-# Carpetas temporales
+# Carpetas temporales del sistema
 temp/
 tmp/
 
-# Archivos del sistema
+# Archivos del sistema operativo y backups
 Thumbs.db
 .DS_Store
 *.tmp
 *.bak
 
-# Archivos de IDE
+# Archivos y carpetas de entornos de desarrollo (IDE)
 .vscode/
 .idea/
 *.swp
