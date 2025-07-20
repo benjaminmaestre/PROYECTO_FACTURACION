@@ -1,0 +1,47 @@
+# Archivos sensibles con credenciales
+usuarios_creados.log
+usuarios_errores.log
+
+# Logs del sistema
+*.log
+log_diario.log
+log_envios.csv
+
+# Archivos temporales de LaTeX
+*.aux
+*.log
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+
+# Archivos de compilación
+compile_*.log
+
+# Archivos generados (PDFs pueden incluirse opcionalmente)
+# facturas/*.pdf
+
+# Archivos de compras con datos sensibles
+compras/*.csv
+compras/*.log
+
+# Carpetas temporales
+temp/
+tmp/
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Variables de entorno
+.env
+.env.local
