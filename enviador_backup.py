@@ -1,6 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# Compatibilidad con Windows - cargar variables desde .env si no están en el sistema
+def cargar_env():
+    """Carga variables de entorno desde archivo .env si existe"""
+    env_file = '.env'
+    if os.path.exists(env_file):
+        with open(env_file, 'r', encoding='utf-8') as f:
+            for linea in f:
+                linea = linea.strip()
+                if linea and not linea.startswith('#'):
+                    if '=' in linea:
+                        clave, valor = linea.split('=', 1)
+                        os.environ[clave.strip()] = valor.strip()
+
+# Cargar variables de entorno al inicio
+cargar_env()
+
 import csv
 import smtplib
 import os
@@ -13,28 +29,9 @@ from email.mime.text import MIMEText
 from email import encoders
 import mimetypes
 
-# Compatibilidad con Windows - cargar variables desde .env si no están en el sistema
-def cargar_env():
-    """Carga variables de entorno desde archivo .env si existe"""
-    env_file = '.env'
-    if os.path.exists(env_file):
-        print("🔍 Cargando configuración desde .env...")
-        with open(env_file, 'r', encoding='utf-8') as f:
-            for linea in f:
-                linea = linea.strip()
-                if linea and not linea.startswith('#') and '=' in linea:
-                    clave, valor = linea.split('=', 1)
-                    os.environ[clave.strip()] = valor.strip()
-                    print(f"✅ {clave.strip()} configurado")
-    else:
-        print("⚠️ Archivo .env no encontrado")
-
-# Cargar variables de entorno al inicio
-cargar_env()
-
 # Configuración del servidor SMTP
-SMTP_SERVER = os.getenv('SMTP_SERVER', 'smtp.gmail.com')
-SMTP_PORT = int(os.getenv('SMTP_PORT', '587'))
+SMTP_SERVER = "smtp.gmail.com"
+SMTP_PORT = 587
 
 # 🔐 SEGURIDAD: Leer credenciales de variables de entorno
 EMAIL_USER = os.getenv('EMAIL_USER')

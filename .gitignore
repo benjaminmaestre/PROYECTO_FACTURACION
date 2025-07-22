@@ -1,46 +1,66 @@
-# Archivos sensibles con credenciales
-usuarios_creados.log
-usuarios_errores.log
+# Directorios de salida
+facturas/
+compras/
 
-# Logs del sistema
+# Archivos de log y registros
 *.log
 log_diario.log
 log_envios.csv
+pendientes_envio.csv
+reporte.txt
+usuarios_errores.log
 
-# Archivos temporales de LaTeX (archivos de soporte generados)
+# CRÍTICO: Archivos con información sensible
+usuarios_creados.log
+.env
+.env.local
+.env.production
+.env.staging
+config.json
+credenciales.txt
+
+# Archivos temporales de LaTeX
 *.aux
-*.synctex.gz
 *.fdb_latexmk
 *.fls
-*.out
+*.synctex.gz
 *.toc
+*.out
+*.bbl
+*.blg
+*.bcf
+*.run.xml
 
-# Archivos de compilación específicos
-compile_*.log
-
-# Archivos generados (PDFs y TeX dentro de la carpeta 'facturas')
-facturas/
-
-# Archivos de compras con datos sensibles
-compras/*.csv
-compras/*.log
-
-# Carpetas temporales del sistema
-temp/
-tmp/
-
-# Archivos del sistema operativo y backups
-Thumbs.db
+# Archivos temporales del sistema
 .DS_Store
+Thumbs.db
 *.tmp
-*.bak
+*.temp
+*~
+.#*
 
-# Archivos y carpetas de entornos de desarrollo (IDE)
+# Archivos de respaldo
+*.bak
+*.backup
+*.orig
+
+# Archivos de IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Variables de entorno
-.env
-.env.local
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Archivos específicos que pueden contener datos sensibles
+smtp_config.py
+email_credentials.txt
+passwords.txt
