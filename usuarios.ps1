@@ -105,6 +105,8 @@ if (Test-Path "usuarios_errores.log") {
 
 $successCount = 0
 $errorCount = 0
+$skippedCount = 0
+$emptyDataCount = 0
 
 # Crear encabezados en el archivo de log
 "Timestamp,Nombre Completo,Correo,Usuario,Contraseña" | Out-File -FilePath "usuarios_creados.log" -Encoding UTF8
@@ -117,7 +119,7 @@ Import-Csv "empleados.csv" -Encoding UTF8 | ForEach-Object {
     # Validar datos
     if ([string]::IsNullOrEmpty($NombreCompleto) -or [string]::IsNullOrEmpty($Correo)) {
         Write-Host "   ⚠️  Saltando registro con datos vacíos" -ForegroundColor Yellow
-        $errorCount++
+        $emptyDataCount++
         return
     }
 
@@ -133,7 +135,7 @@ Import-Csv "empleados.csv" -Encoding UTF8 | ForEach-Object {
         # Verificar si ya existe
         if (Get-LocalUser -Name $Username -ErrorAction SilentlyContinue) {
             Write-Host "   ⚠️  Usuario $Username ya existe, saltando..." -ForegroundColor Yellow
-            $errorCount++
+            $skippedCount++
             return
         }
 
@@ -144,8 +146,28 @@ Import-Csv "empleados.csv" -Encoding UTF8 | ForEach-Object {
         # Crear usuario
         New-LocalUser -Name $Username -FullName $NombreCompleto -Password $Password -Description $description
 
-        # Agregar al grupo Users
-        Add-LocalGroupMember -Group "Users" -Member $Username
+        # Detectar el nombre correcto del grupo Users/Usuarios
+        $UsersGroup = $null
+        try {
+            # Intentar primero "Users" (inglés)
+            $UsersGroup = Get-LocalGroup -Name "Users" -ErrorAction SilentlyContinue
+            if (-not $UsersGroup) {
+                # Intentar "Usuarios" (español)
+                $UsersGroup = Get-LocalGroup -Name "Usuarios" -ErrorAction SilentlyContinue
+            }
+            if (-not $UsersGroup) {
+                # Buscar por SID del grupo Users (funciona en cualquier idioma)
+                $UsersGroup = Get-LocalGroup | Where-Object { $_.SID -eq "S-1-5-32-545" }
+            }
+            
+            if ($UsersGroup) {
+                Add-LocalGroupMember -Group $UsersGroup.Name -Member $Username
+            } else {
+                Write-Host "   ⚠️  No se pudo encontrar el grupo Users/Usuarios para $Username" -ForegroundColor Yellow
+            }
+        } catch {
+            Write-Host "   ⚠️  Error agregando $Username al grupo: $($_.Exception.Message)" -ForegroundColor Yellow
+        }
 
         # Log
         $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
@@ -168,10 +190,26 @@ Import-Csv "empleados.csv" -Encoding UTF8 | ForEach-Object {
 
 Write-Host ""
 
-# 6. Mostrar resumen final
+# 6. Mostrar resumen final mejorado
 Write-Host "6️⃣ RESUMEN FINAL:" -ForegroundColor Yellow
 Write-Host "   ✅ Usuarios creados exitosamente: $successCount" -ForegroundColor Green
-Write-Host "   ❌ Errores encontrados: $errorCount" -ForegroundColor Red
+
+if ($skippedCount -gt 0) {
+    Write-Host "   ℹ️  Usuarios ya existentes (saltados): $skippedCount" -ForegroundColor Cyan
+}
+
+if ($emptyDataCount -gt 0) {
+    Write-Host "   ⚠️  Registros con datos vacíos: $emptyDataCount" -ForegroundColor Yellow
+}
+
+if ($errorCount -gt 0) {
+    Write-Host "   ❌ Errores reales encontrados: $errorCount" -ForegroundColor Red
+}
+
+if ($successCount -eq 0 -and $skippedCount -gt 0 -and $errorCount -eq 0) {
+    Write-Host ""
+    Write-Host "   📋 No se crearon usuarios nuevos - Todos ya existían" -ForegroundColor Cyan
+}
 
 if ($successCount -gt 0) {
     Write-Host ""
